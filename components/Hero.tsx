@@ -111,12 +111,12 @@ export function Hero() {
           {/* Photo */}
           <div className="lg:col-span-2 flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700">
+              <div className="w-72 h-72 sm:w-80 sm:h-80 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700">
                 <Image
                   src="/profile.png"
                   alt="Maggie Ma"
-                  width={256}
-                  height={256}
+                  width={320}
+                  height={320}
                   className="object-cover w-full h-full"
                   priority
                 />
