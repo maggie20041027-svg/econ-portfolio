@@ -127,6 +127,50 @@ export function Hero() {
             </div>
           </div>
         </div>
+
+        {/* Prose essay */}
+        <div className="mt-20 border-t border-slate-100 dark:border-slate-800/60 pt-16">
+          <div className="max-w-[600px] mx-auto space-y-6">
+            <p className="text-xs font-mono font-medium text-blue-600 dark:text-blue-400 mb-6">
+              01 / about
+            </p>
+
+            <p className="text-[1.125rem] leading-[1.75] text-slate-700 dark:text-slate-300">
+              I came to economics because I wanted to understand why things happen
+              the way they do&nbsp;— why some policies work and others backfire,
+              why people save or don&apos;t, why markets behave irrationally at
+              exactly the wrong moments. What I didn&apos;t expect was that
+              answering those questions would pull me straight into data science.
+              Statistics, machine learning, and causal inference turned out to be
+              the tools that make &ldquo;why&rdquo; questions tractable.
+            </p>
+
+            <p className="text-[1.125rem] leading-[1.75] text-slate-700 dark:text-slate-300">
+              Most of my recent work at Northeastern has been in that
+              intersection&nbsp;— using methods like Double Machine Learning to
+              separate correlation from causation, or tree-based models to
+              understand which features actually drive an outcome. I&apos;m most
+              interested in problems where the technical rigor has real stakes
+              attached: policy evaluations, financial decisions, anything where
+              &ldquo;close enough&rdquo; isn&apos;t good enough.
+            </p>
+
+            <p className="text-[1.125rem] leading-[1.75] text-slate-700 dark:text-slate-300">
+              Economics also gave me something that pure data science training
+              doesn&apos;t always: a way of thinking about incentives, constraints,
+              and tradeoffs before touching any data. When I approach a business
+              problem, I start with the economics&nbsp;— what are the agents
+              optimizing for, where are the constraints binding, what does the
+              equilibrium look like? That framing tends to surface the right
+              questions faster than jumping straight to models, and it keeps the
+              analysis grounded in mechanisms that actually make sense. Most
+              business problems that look like prediction problems are really
+              identification problems in disguise, and that&apos;s a distinction
+              economics trains you to notice.
+            </p>
+          </div>
+        </div>
+
       </div>
     </section>
   );
