@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import { Lora } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
+
+const lora = Lora({ subsets: ["latin"], style: ["italic"] });
 
 export const metadata: Metadata = {
   title: "About · Maggie Ma",
@@ -55,8 +58,8 @@ export default function AboutPage() {
             </div>
 
             {/* Prose */}
-            <div className="space-y-8 text-left">
-              <p className="text-[1.25rem] leading-[1.8] text-slate-700 dark:text-slate-300">
+            <div className={`space-y-8 text-left italic ${lora.className}`}>
+              <p className="text-[1.05rem] leading-[1.85] text-slate-700 dark:text-slate-300">
                 I came to economics because I wanted to understand why things
                 happen the way they do: why some policies work and others
                 backfire, why people save or don&apos;t, why markets behave
@@ -67,7 +70,7 @@ export default function AboutPage() {
                 questions tractable.
               </p>
 
-              <p className="text-[1.25rem] leading-[1.8] text-slate-700 dark:text-slate-300">
+              <p className="text-[1.05rem] leading-[1.85] text-slate-700 dark:text-slate-300">
                 Most of my recent work at Northeastern has been in that
                 intersection: using methods like Double Machine Learning to
                 separate correlation from causation, or tree-based models to
@@ -77,7 +80,7 @@ export default function AboutPage() {
                 where &ldquo;close enough&rdquo; isn&apos;t good enough.
               </p>
 
-              <p className="text-[1.25rem] leading-[1.8] text-slate-700 dark:text-slate-300">
+              <p className="text-[1.05rem] leading-[1.85] text-slate-700 dark:text-slate-300">
                 Economics also gave me something that pure data science training
                 doesn&apos;t always: a way of thinking about incentives,
                 constraints, and tradeoffs before touching any data. When I
