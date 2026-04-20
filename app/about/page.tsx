@@ -31,9 +31,9 @@ export default function AboutPage() {
 
             {/* Quote */}
             <blockquote className="space-y-8">
-              <div className="font-serif text-[2.75rem] sm:text-[3.5rem] leading-[1.2] text-slate-900 dark:text-slate-100">
-                <p className="text-left pr-[12%]">&ldquo;All models are wrong,</p>
-                <p className="text-right pl-[12%]">but some are useful.&rdquo;</p>
+              <div className="font-serif text-[2rem] sm:text-[2.6rem] leading-[1.35] text-slate-900 dark:text-slate-100">
+                <p className="whitespace-nowrap text-left">&ldquo;All models are wrong,</p>
+                <p className="whitespace-nowrap text-right">but some are useful.&rdquo;</p>
               </div>
               <footer className="space-y-1">
                 <p className="text-lg font-bold text-slate-900 dark:text-slate-100">
