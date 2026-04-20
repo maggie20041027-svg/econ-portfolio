@@ -1,8 +1,5 @@
 import type { Metadata } from "next";
-import { Caveat } from "next/font/google";
 import { Navbar } from "@/components/Navbar";
-
-const caveat = Caveat({ subsets: ["latin"], weight: ["400", "600"] });
 
 export const metadata: Metadata = {
   title: "About · Maggie Ma",
@@ -14,7 +11,7 @@ export default function AboutPage() {
   return (
     <>
       <Navbar />
-      <main className={`min-h-[calc(100vh-4rem)] ${caveat.className}`}>
+      <main className="min-h-[calc(100vh-4rem)]">
         <div className="relative overflow-hidden">
 
           {/* Decorative dot grids */}
@@ -29,43 +26,37 @@ export default function AboutPage() {
             ))}
           </div>
 
-          <div className="max-w-[680px] mx-auto px-8 py-24 space-y-16">
+          {/* Single centered column */}
+          <div className="max-w-[640px] mx-auto px-8 py-24 text-center space-y-16">
 
-            {/* Quote — staggered layout */}
-            <blockquote className="space-y-10">
-              <div className="text-[2.6rem] sm:text-[3.6rem] leading-[1.15] text-slate-900 dark:text-slate-100 select-none">
-                {/* Line 1: anchored left */}
-                <p className="text-left pr-[18%]">
-                  &ldquo;All models are wrong,
-                </p>
-                {/* Line 2: anchored right */}
-                <p className="text-right pl-[18%]">
-                  but some are useful.&rdquo;
-                </p>
-              </div>
-
-              <footer className="text-center space-y-1">
-                <p className="text-xl font-semibold text-slate-900 dark:text-slate-100">
+            {/* Quote */}
+            <blockquote className="space-y-8">
+              <p className="font-serif text-[2.75rem] sm:text-[3.5rem] leading-[1.2] text-slate-900 dark:text-slate-100">
+                &ldquo;All models are wrong,
+                <br className="hidden sm:block" /> but some are useful.&rdquo;
+              </p>
+              <footer className="space-y-1">
+                <p className="text-lg font-bold text-slate-900 dark:text-slate-100">
                   George Box
                 </p>
-                <p className="text-base text-slate-400 dark:text-slate-500">
+                <p className="text-sm text-slate-400 dark:text-slate-500">
                   Empirical Model Building and Response Surfaces, 1987
                 </p>
               </footer>
             </blockquote>
 
             {/* Divider */}
-            <div className="flex items-center gap-4">
-              <div className="h-px flex-1 bg-slate-200 dark:bg-slate-800" />
+            <div className="flex items-center justify-center gap-4">
+              <div className="h-px w-16 bg-slate-200 dark:bg-slate-800" />
               <span className="font-mono text-[11px] text-slate-400 dark:text-slate-600 tracking-widest uppercase">
                 about
               </span>
-              <div className="h-px flex-1 bg-slate-200 dark:bg-slate-800" />
+              <div className="h-px w-16 bg-slate-200 dark:bg-slate-800" />
             </div>
 
             {/* Prose */}
-            <div className="space-y-8">
-              <p className="text-[1.4rem] leading-[1.85] text-slate-700 dark:text-slate-300">
+            <div className="space-y-8 text-left">
+              <p className="text-[1.25rem] leading-[1.8] text-slate-700 dark:text-slate-300">
                 I came to economics because I wanted to understand why things
                 happen the way they do: why some policies work and others
                 backfire, why people save or don&apos;t, why markets behave
@@ -76,7 +67,7 @@ export default function AboutPage() {
                 questions tractable.
               </p>
 
-              <p className="text-[1.4rem] leading-[1.85] text-slate-700 dark:text-slate-300">
+              <p className="text-[1.25rem] leading-[1.8] text-slate-700 dark:text-slate-300">
                 Most of my recent work at Northeastern has been in that
                 intersection: using methods like Double Machine Learning to
                 separate correlation from causation, or tree-based models to
@@ -86,7 +77,7 @@ export default function AboutPage() {
                 where &ldquo;close enough&rdquo; isn&apos;t good enough.
               </p>
 
-              <p className="text-[1.4rem] leading-[1.85] text-slate-700 dark:text-slate-300">
+              <p className="text-[1.25rem] leading-[1.8] text-slate-700 dark:text-slate-300">
                 Economics also gave me something that pure data science training
                 doesn&apos;t always: a way of thinking about incentives,
                 constraints, and tradeoffs before touching any data. When I
