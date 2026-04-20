@@ -27,6 +27,12 @@ export function Navbar() {
                 {label}
               </Link>
             ))}
+            <Link
+              href="/gallery"
+              className="px-3 py-1.5 text-sm font-medium text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 hover:bg-blue-50 dark:hover:bg-blue-950/40 rounded-md transition-colors"
+            >
+              Gallery
+            </Link>
           </div>
           <ThemeToggle />
         </div>
