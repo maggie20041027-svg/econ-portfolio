@@ -14,7 +14,7 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <div className="hidden sm:flex items-center gap-1 mr-2">
             {[
-              { href: "#about", label: "About" },
+              { href: "/about", label: "About" },
               { href: "#projects", label: "Projects" },
               { href: "#skills", label: "Skills" },
               { href: "#contact", label: "Contact" },
